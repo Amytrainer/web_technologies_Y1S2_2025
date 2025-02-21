@@ -3,6 +3,8 @@
 ## Week 1
 Into to HTML 
 
-## Week 2
+## Week 2 HTML and CSS Bakery 
 ## Week 3 Harry Potter Challenge
-https://www.cdnfonts.com/harry-potter.font
+
+Play this Game:https://flexboxfroggy.com/
+Harry Potter Font: https://www.cdnfonts.com/harry-potter.font
