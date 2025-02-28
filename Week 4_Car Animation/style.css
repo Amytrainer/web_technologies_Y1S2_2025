@@ -23,6 +23,7 @@
   background-image: url(img/track.png);
   background-repeat: repeat-x;
   position: absolute;
+  animation:trackMove linear infinite 10s;
 }
 
 .car {
@@ -32,9 +33,36 @@
   background-size: cover;
   position: absolute;
   /* bottom:30vh; */
-  left:200px;
+  left: 200px;
 }
-wheel1 img{
-position:relative;
-width:30px;
+.wheel1 img {
+  position: relative;
+  width: 75px;
+  left: 42px;
+  top: 40px;
+  animation-name:wheelRotation;
+  animation-duration: .16s;
+  animation-iteration-count: infinite;
+  animation-duration: linear;
+}
+.wheel2 img {
+  position: relative;
+  width: 75px;
+  left: 237px;
+  top:-40px;
+  animation-name:wheelRotation;
+  animation-duration: .16s;
+  animation-iteration-count: infinite;
+  animation-duration: linear;
+}
+
+@keyframes wheelRotation{
+  100%{
+    transform:rotate(360deg);
+  }
+}
+@keyframes trackMove{
+  100%{
+    transform:translateX(-500vw);
+  }
 }
