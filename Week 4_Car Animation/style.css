@@ -2,6 +2,10 @@
   margin: 0%;
   padding: 0%;
 }
+body{
+  overflow:hidden;
+  animation: shakeScreen infinite linear 2s;
+}
 .sky {
   background-image: url(img/background.jpg);
   height: 100vh;
@@ -65,4 +69,16 @@
   100%{
     transform:translateX(-500vw);
   }
+}
+@keyframes shakeScreen{
+  0%{
+    transform:translateY(-50px);
+  }
+  50%{
+    transform:translateY(50px);
+  }
+  100%{
+    transform:translateY(-50px);
+  }
+
 }
