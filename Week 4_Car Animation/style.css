@@ -1,0 +1,40 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+.sky {
+  background-image: url(img/background.jpg);
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+.tree {
+  height: 100vh;
+  width: 100%;
+  background-image: url(img/trees.png);
+  top: 0px;
+  background-size: cover;
+  position: relative;
+}
+.track {
+  height: 60vh;
+  width: 800vw;
+  background-image: url(img/track.png);
+  background-repeat: repeat-x;
+  position: absolute;
+}
+
+.car {
+  height: 100px;
+  width: 380px;
+  background-image: url(img/car_body.png);
+  background-size: cover;
+  position: absolute;
+  /* bottom:30vh; */
+  left:200px;
+}
+wheel1 img{
+position:relative;
+width:30px;
+}
