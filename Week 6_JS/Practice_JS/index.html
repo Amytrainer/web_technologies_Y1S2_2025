@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>JS Practice</title>
+    <!-- <script src="script.js" defer></script> -->
+  </head>
+  <body>
+    <h1>Welcome to JS Practical</h1>
+    <button id="btnExample">Click Me</button>
+    <!-- <div id="example">Welcome!</div> -->
+    <!-- 1. One element -->
+    <p id="message">My world of documentation</p>
+    <script>
+      let msg = document.getElementById("message");
+      msg.innerHTML = "Hello,Javascript";
+    </script>
+    <!-- 2.Multiple  -->
+
+    <div class="card">First Card</div>
+    <div class="card">Second Card</div>
+
+
+
+
+
+
+
+
+
+    
+    <script>
+      let firstCard = document.querySelector(".card");
+      firstCard.style.border = "2px solid red";
+
+      document.getElementById("btnExample").addEventListener("click", () => {
+        alert("Hello I am there");
+      });
+    </script>
+  </body>
+</html>

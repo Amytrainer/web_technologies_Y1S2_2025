@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticket Calculator</title>
+  </head>
+  <body>
+    <input id="txtAge" placeholder="Enter your age" />
+    <button id="btnGetTicket">Get Ticket Type</button>
+    <p id="result">Nothing</p>
+
+    <!-- Javascript here  -->
+    <script>
+      document.getElementById("btnGetTicket").addEventListener("click", () => {
+        let age = document.getElementById("txtAge").value;
+        let output = "";
+        if (age < 14) {
+          output = "Child's Ticket";
+        } else if (age < 65) {
+          output = "Adult Ticket";
+        } else {
+          output = "Travel Free";
+        }
+        document.getElementById("result").innerHTML = output;
+      });
+    </script>
+  </body>
+</html>
